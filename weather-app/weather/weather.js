@@ -13,7 +13,9 @@ var getWeatherByLatAndLng = (lat, lng, callback) => {
             callback('unable to find weather for that location');
         } else if (response.statusCode === 200) {
             callback(undefined, {
-                currentTempature: body.currently.temperature
+                currentTempature: body.currently.temperature,
+                apparentTemperature: body.currently.apparentTemperature,
+                summary: body.currently.summary
             });
         } else {
             callback('Unknown Error -- '+ body);
