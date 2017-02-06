@@ -9,12 +9,14 @@ var getWeatherByLatAndLng = (lat, lng, callback) => {
     }, (error, response, body) => {
         if (error) {
             callback('unable to connect to weather servers');
-        } else if (String(body).includes('Not Found')) {
+        } else if (response.statusCode === 404) {
             callback('unable to find weather for that location');
-        } else {
+        } else if (response.statusCode === 200) {
             callback(undefined, {
                 currentTempature: body.currently.temperature
             });
+        } else {
+            callback('Unknown Error -- '+ body);
         }
     });
 };
