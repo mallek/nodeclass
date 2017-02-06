@@ -1,0 +1,14 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather application taking data from google geolocation services and checking the weather",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Travis Haley",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
