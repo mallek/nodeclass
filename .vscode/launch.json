@@ -8,11 +8,11 @@
             "type": "node2",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/notes-node/app.js",
+            "program": "${workspaceRoot}/weather-app/app.js",
             "args": [
-                "list"
+                "-a 80120"
             ],
-            "cwd": "${workspaceRoot}/notes-node/"
+            "cwd": "${workspaceRoot}/weather-app/"
         },
         {
             "type": "node2",
