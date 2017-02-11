@@ -8,7 +8,7 @@
             "type": "node2",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/weather-app/app.js",
+            "program": "${workspaceRoot}/weather-app/app-promise.js",
             "args": [
                 "-a 80120"
             ],
