@@ -23,4 +23,7 @@ var getWeatherByLatAndLng = (lat, lng, callback) => {
     });
 };
 
+
+
 module.exports.getWeatherByLatAndLng = getWeatherByLatAndLng;
+
