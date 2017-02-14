@@ -9,6 +9,8 @@
   "author": "Travis Haley",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.15.3",
+    "moment": "^2.17.1",
     "request": "^2.79.0",
     "yargs": "^6.6.0"
   }
