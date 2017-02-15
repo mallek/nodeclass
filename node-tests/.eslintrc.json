@@ -19,6 +19,7 @@
         "constructor-super": "warn",
         "valid-typeof": "warn",
         "react/jsx-sort-prop-types": 0,
-        "semi": "error"
+        "semi": "error",
+        "no-console":"off"
     }
 }
